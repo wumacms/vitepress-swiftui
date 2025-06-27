@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "SwiftUI 训练营"
+  name: "SwiftUI 学习站"
   text: "专注于分享 SwiftUI 实战技巧与开发经验"
-  tagline: "从入门到精通，掌握 SwiftUI 的每一个细节"
+  tagline: "从入门到进阶，掌握 SwiftUI 的每一个细节"
   image:
     src: /images/vitepress-logo-large.svg
     alt: vitepress logo
