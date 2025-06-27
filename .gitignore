@@ -1,0 +1,38 @@
+# Node.js 相关
+node_modules/
+dist/
+*.log
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# VitePress 构建产物
+.vitepress/dist/
+.vitepress/cache/
+.vitepress/temp/
+.vitepress/.vite/
+.vitepress/.vitepress/
+
+# macOS 系统文件
+.DS_Store
+
+# VS Code 配置文件
+.vscode/
+
+# 本地环境变量
+.env*
+!.env.example
+
+# 部署目录（如果有设置）
+docs/.vitepress/dist/
+
+# 可选：部署分支缓存（如果你用 gh-pages 插件）
+gh-pages/
+
+# 可选：编辑器/操作系统临时文件
+*.swp
+*.tmp
+*.bak
+Thumbs.db
+ehthumbs.db
+.idea/
