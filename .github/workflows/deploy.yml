@@ -19,10 +19,12 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      # ✅ 用官方 action 安装 pnpm，并写入 PATH
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 10.12.3
+          run_install: false  # 我们后面手动安装
 
       - name: Install dependencies
         run: pnpm install
