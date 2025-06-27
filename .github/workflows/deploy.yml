@@ -20,18 +20,23 @@ jobs:
           cache: 'pnpm'
 
       - name: Enable corepack and install pnpm
+        shell: bash
         run: |
           corepack enable
           corepack prepare pnpm@10.12.3 --activate
+          pnpm -v
 
       - name: Install dependencies
+        shell: bash
         run: pnpm install
 
       - name: Build VitePress site
+        shell: bash
         working-directory: docs
         run: pnpm vitepress build
 
       - name: Add CNAME file
+        shell: bash
         run: echo 'swiftuix.com' > docs/.vitepress/dist/CNAME
 
       - name: Deploy to GitHub Pages
