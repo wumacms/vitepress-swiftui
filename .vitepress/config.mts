@@ -77,8 +77,8 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: '根据 MIT 许可证发布。',
-      copyright: '版权所有 © 2019 至今 Evan You'
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
     }
   }
 })
