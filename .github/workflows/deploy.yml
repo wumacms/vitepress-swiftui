@@ -10,33 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
+          cache: 'pnpm'
 
-      - name: Install PNPM
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10.12.3
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Build VitePress site
-        run: pnpm run build
+        working-directory: docs
+        run: pnpm vitepress build
 
       - name: Add CNAME file
-        run: echo 'swiftuix.com' > .vitepress/dist/CNAME
+        run: echo 'swiftuix.com' > docs/.vitepress/dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: docs/.vitepress/dist
           publish_branch: gh-pages
           cname: swiftuix.com
