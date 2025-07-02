@@ -6,6 +6,7 @@ export default defineConfig({
   title: "SwiftUI训练营",
   description: "专注于分享 SwiftUI 实战技巧与开发经验",
   srcDir: "docs",
+  base: '/',
   // ignoreDeadLinks: true,
   themeConfig: {
     logo: '/images/logo.svg',
