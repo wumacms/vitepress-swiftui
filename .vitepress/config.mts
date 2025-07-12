@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
-import algolia from './algolia'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "SwiftUI训练营",
   description: "专注于分享 SwiftUI 实战技巧与开发经验",
+  head: [['link', { rel: 'icon', href: '/images/logo.svg' }]],
   srcDir: "docs",
   base: '/',
   // ignoreDeadLinks: true,
