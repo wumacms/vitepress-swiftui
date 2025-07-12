@@ -93,8 +93,8 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      message: '本网站使用 VitePress 制作',
+      copyright: '版权所有 © 2025 SwiftUI训练营'
     }
   }
 })
