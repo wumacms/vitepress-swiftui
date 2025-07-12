@@ -87,8 +87,8 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名/你的仓库名' },
-      { icon: 'twitter', link: 'https://twitter.com/你的账号' }
+      { icon: 'github', link: 'https://github.com/wumacms' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/249603883' }
     ],
 
     // 页脚
