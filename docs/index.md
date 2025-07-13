@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-  name: "SwiftUI从入门到入坑"
+  name: "SwiftUIX"
   text: "专注于分享 SwiftUI 实战技巧与开发经验"
   tagline: "从入门到进阶，掌握 SwiftUI 的每一个细节"
   image:
-    src: /images/swiftuix.svg
-    alt: vitepress logo
+    src: /images/swiftui_x.svg
+    alt: logo
   actions:
     - theme: brand
       text: 开始学习
