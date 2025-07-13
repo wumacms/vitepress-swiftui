@@ -7,6 +7,11 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/images/logo.svg' }]],
   srcDir: "docs",
   base: '/',
+  vite: {
+    server: {
+      open: true,
+    },
+  },
   // ignoreDeadLinks: true,
   themeConfig: {
     logo: '/images/logo.svg',
@@ -93,7 +98,7 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: '本网站使用 VitePress 制作',
+      message: '本站使用 VitePress 制作',
       copyright: '版权所有 © 2025 SwiftUI训练营'
     }
   }
